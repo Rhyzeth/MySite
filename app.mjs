@@ -6,9 +6,8 @@ import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import { Liquid } from 'liquidjs'
 
-import indexRouter from './routes/index.js';
-import usersRouter from './routes/users.js';
-import { engine } from 'express/lib/application.js';
+import indexRouter from './routes/index.mjs';
+import usersRouter from './routes/users.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);

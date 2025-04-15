@@ -3,7 +3,7 @@
 /**
  * Module dependencies.
  */
-import app, { set } from '../app';
+import app from '../app.mjs';
 import createDebug from 'debug';
 import { createServer } from 'http';
 
@@ -13,7 +13,7 @@ const debug = createDebug('website:server');
  * Get port from environment and store in Express.
  */
 const port = normalizePort(process.env.PORT || '3000');
-set('port', port);
+app.set('port', port);
 
 /**
  * Create HTTP server.
